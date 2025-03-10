@@ -15,7 +15,7 @@ public class MyProfile {
         String 身份 = "GitHub萌新";
         String 技能 = "会写HelloWorld的究极进化版";
         String 状态 = "正在与Java的;和{}进行激烈搏斗";
-        boolean 是否在吃宵夜 = true; // 代码写不好？炫碗泡面再说！
+        boolean 是否在吃宵夜 = true; // 代码写不好？埋头睡一觉再说！
         System.out.println("欢迎参观我的代码动物园🐾");
     }
 }
