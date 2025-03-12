@@ -1,0 +1,51 @@
+{
+  "id": "3023689",
+  "name": "第二学期",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7549155",
+      "name": "24gf-newspaper",
+      "font_class": "24gf-newspaper",
+      "unicode": "e8b3",
+      "unicode_decimal": 59571
+    },
+    {
+      "icon_id": "630094",
+      "name": "向右箭头",
+      "font_class": "xiangyoujiantou",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "4735355",
+      "name": "icon_论坛-线",
+      "font_class": "icon_luntan-xian",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "5147",
+      "name": "图书音像",
+      "font_class": "tushuyinxiang",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "685441",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e797",
+      "unicode_decimal": 59287
+    },
+    {
+      "icon_id": "4292629",
+      "name": "资料",
+      "font_class": "ziliao",
+      "unicode": "e759",
+      "unicode_decimal": 59225
+    }
+  ]
+}

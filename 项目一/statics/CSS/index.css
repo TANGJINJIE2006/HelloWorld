@@ -1,0 +1,19 @@
+@import url(./public.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex_box{
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.flex_box > .item{
+   margin-left: 10px;
+}

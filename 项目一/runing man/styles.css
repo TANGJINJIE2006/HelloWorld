@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.running-man {
+    width: 100px;
+    height: 100px;
+    background-image: url('running-man-sprite.png');
+    background-size: 800px 100px; /* Adjust based on your sprite sheet */
+    animation: run 1s steps(8) infinite;
+}
+
+@keyframes run {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -800px 0;
+    }
+}
