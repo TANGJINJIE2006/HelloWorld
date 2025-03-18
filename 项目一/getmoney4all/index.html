@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>财富增长全景系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- 粒子动画容器 -->
+    <div id="particles-js"></div>
+
+    <div class="grid-container">
+        <!-- 区块1：资金增长 -->
+        <div class="grid-item neon-box">
+            <h2 class="gradient-text">实时资产监测</h2>
+            <div class="data-panel">
+                <div class="gauge-chart" id="gauge1"></div>
+                <p class="counter" id="counter1">0</p>
+            </div>
+        </div>
+
+        <!-- 区块2：收益分析 -->
+        <div class="grid-item neon-box">
+            <h2 class="gradient-text">收益趋势预测</h2>
+            <div class="chart-container">
+                <canvas id="trendChart"></canvas>
+            </div>
+        </div>
+
+        <!-- 区块3：动态分布 -->
+        <div class="grid-item neon-box">
+            <h2 class="gradient-text">资金流动热图</h2>
+            <div class="heatmap" id="heatmap"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // 粒子动画初始化
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80 },
+                color: { value: '#00ffff' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5 },
+                size: { value: 3 },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                }
+            }
+        });
+
+        // 统一计时器
+        let counterValues = [0, 0, 0];
+        const counters = document.querySelectorAll('.counter');
+
+        setInterval(() => {
+            counters.forEach((counter, index) => {
+                counterValues[index] += Math.random() * 100;
+                counter.textContent = Math.floor(counterValues[index]).toLocaleString();
+            });
+        }, 1500);
+
+        // 图表初始化
+        const ctx = document.getElementById('trendChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+                datasets: [{
+                    label: '收益趋势',
+                    data: [12000, 19000, 3000, 5000, 2000, 3000, 45000],
+                    borderColor: '#00ff00',
+                    tension: 0.4
+                }]
+            }
+        });
+    </script>
+</body>
+
+</html>
