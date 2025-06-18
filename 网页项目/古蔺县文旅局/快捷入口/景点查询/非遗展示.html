@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古蔺非遗展示</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background-color: #c12c1f;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .nav {
+            background-color: #c12c1f;
+            padding: 1rem;
+        }
+
+        .nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav a:hover {
+            color: #3498db;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .card-title {
+            color: #c12c1f;
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-description {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .footer {
+            background-color: #c12c1f;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>古蔺非物质文化遗产展示</h1>
+        <p>传承历史文脉，弘扬传统文化</p>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="../../index.html">返回首页</a></li>
+            <li><a href="#folk-art">民间美术</a></li>
+            <li><a href="#traditional-craft">传统技艺</a></li>
+            <li><a href="#folk-custom">民俗文化</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <!-- 民间美术类 -->
+        <div id="folk-art" class="card">
+            <img src="../../images/miao.png" alt="苗族刺绣" class="card-image">
+            <div class="card-content">
+                <h2 class="card-title">苗族刺绣</h2>
+                <p class="card-description">
+                    古蔺苗族刺绣以其独特的图案和色彩闻名，纹样多取材于自然，具有强烈的民族特色和艺术价值。
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../../images/hua.webp" alt="古蔺花灯" class="card-image">
+            <div class="card-content">
+                <h2 class="card-title">古蔺花灯</h2>
+                <p class="card-description">
+                    古蔺花灯是川南地区传统民间舞蹈，集音乐、舞蹈、戏剧于一体，具有浓郁的地方特色和民俗风情。
+                </p>
+            </div>
+        </div>
+
+        <!-- 传统技艺类 -->
+        <div id="traditional-craft" class="card">
+            <img src="../../images/niang.webp" alt="郎酒酿造技艺" class="card-image">
+            <div class="card-content">
+                <h2 class="card-title">郎酒酿造技艺</h2>
+                <p class="card-description">
+                    郎酒酿造技艺传承百年，以赤水河流域优质原料和独特工艺酿造，被誉为“酱香典范”。
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../../images/zhubian.webp" alt="古蔺竹编" class="card-image">
+            <div class="card-content">
+                <h2 class="card-title">古蔺竹编</h2>
+                <p class="card-description">
+                    古蔺竹编以本地慈竹为原料，通过选竹、破竹、编织等工序，制成实用与美观兼具的竹制品。
+                </p>
+            </div>
+        </div>
+
+        <!-- 民俗文化类 -->
+        <div id="folk-custom" class="card">
+            <img src="../../images/huanshanjie.webp" alt="苗族花山节" class="card-image">
+            <div class="card-content">
+                <h2 class="card-title">苗族花山节</h2>
+                <p class="card-description">
+                    苗族花山节是古蔺苗族同胞的传统节日，通过跳芦笙、对山歌等活动，展现苗族文化魅力。
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../../images/long.webp" alt="古蔺龙舟赛" class="card-image">
+            <div class="card-content">
+                <h2 class="card-title">古蔺龙舟赛</h2>
+                <p class="card-description">
+                    古蔺龙舟赛历史悠久，每逢端午佳节，赤水河上龙舟竞渡，场面壮观，传承爱国精神。
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 古蔺县非物质文化遗产保护中心</p>
+    </footer>
+</body>
+
+</html>

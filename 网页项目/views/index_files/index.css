@@ -1,0 +1,596 @@
+@import url(./public.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex_box {
+  width: 80%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.flex_box > .item {
+  margin-left: 10px;
+}
+.LogoAndSearch {
+  width: 80%;
+  height: 120px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.LogoAndSearch > .logo {
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+.SearchBox {
+  width: 230px;
+  height: 40px;
+  border: 1px solid green;
+  display: flex
+}
+.SearchBox > button {
+    width: 60px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+.nav_box{
+  width: 100%;
+  height: 50px;
+  background-color: green;
+  color: white;
+}
+.nav_box > ul{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li{
+  width: 160px;
+  height: 50px;
+  color: white;
+  background-color: green;
+  text-align: center;
+  line-height: 50px;
+  z-index: 666666;
+}
+li:hover{
+  background-color: rgb(0, 255, 136);
+  color: rgb(251, 255, 235);
+  cursor: pointer;
+}
+ol{
+  height: 0;
+  overflow: hidden;
+  transform: scaleY(0);
+  transform-origin: top center;
+  transition: all 0.5s ease;
+}
+li:hover > ol{
+  height: auto;
+  transform: scaleY(1);
+}
+.banner{
+  width: 100%;
+  height: 500px;
+  position: relative;;
+}
+.banner > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position:absolute;
+}
+.img_active{
+  z-index: 2;
+}
+.btnL{
+  width: 100px;
+  height: 100px;
+  color: white;
+  background-color:gainsboro;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 666;
+  top: calc(50% - 50px);
+  text-align: center;
+  line-height: 100px;
+  font-size: 50px;
+  cursor: pointer;
+  right: 0;
+}
+.btnR{
+  width: 100px;
+  height: 100px;
+  color: white;
+  background-color: gainsboro;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 666;
+  top: calc(50% - 50px);
+  text-align: center;
+  line-height: 100px;
+  font-size: 50px;
+  cursor: pointer;
+  transform: rotateY(180deg);
+  left: 0;
+}
+.btnL:hover{
+  color: green;
+  background-color: silver;
+  cursor: pointer;
+}
+.btnR:hover{
+  color: green;
+  background-color: silver;
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+.bigporintbox{
+  margin: auto;
+  width:100%;
+  height: 30px;
+  position: absolute;
+  bottom: 10px;
+}
+.miniporintbox{
+  width: 10%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+.porint{
+  width: 20px;
+  height: 20px;
+  gap: 20px;
+  background-color: silver;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.nav_down{
+  width: 100%;
+  height: 50px;
+  background-color: green;
+  color: white;
+}
+.nav_downmessage{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_downmessageL{
+  width: 50%;
+  height: 100%;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav_downmessageR{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_downmessageRminibox{
+  width: 15%;
+  height: 100%;
+  font-size: 12px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav_downmessageRminibox:hover{
+  transform: scale(1.2);
+}
+.nav_downmessageRminibox > span {
+  margin-top: 10px;
+}
+
+.icon-24gf-newspaper:before {
+  color: yellow;
+  font-size: 30px;
+  content: "\e8b3";
+}
+.newspapermsg{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+.newspapermsgL{
+  width: 48%;
+  height: 600px;
+  display: flex;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.newspaperTittleL{
+  width: 80%;
+  height: 10%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.newspaperTittleLL{
+  display: flex;
+  width: 50%;
+  height: 100%;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.newspaperTittleLR{
+  width: 50%;
+  height: 100%;
+  color: green;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.msgTopL{
+  width: 80%;
+  height: 25%;
+  display: flex;
+}
+.msgTopLL{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.msgTopLR{
+  width: 70%;
+  height: 100%;
+  font-size: 10px;
+  color: black;
+}
+.msgMidL{
+  width: 80%;
+  height: 25%;
+  display: flex;
+}
+.msgMidLL{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.msgMidLR{
+  width: 70%;
+  height: 100%;
+  font-size: 10px;
+  color: black;
+}
+.msgLowL{
+  width: 80%;
+  height: 25%;
+  display: flex;
+}
+.msgLowLL{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.msgLowLR{
+  width: 70%;
+  height: 100%;
+  font-size: 10px;
+  color: black;
+}
+.newspapermsgR{ 
+  width: 48%;
+  height: 600px;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.newspaperTittleR{
+  width: 80%;
+  height: 10%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.newspaperTittleRL{
+  display: flex;
+  width: 50%;
+  height: 100%;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.newspaperTittleRR{
+  width: 50%;
+  height: 100%;
+  color: green;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.msgTopR{
+  width: 80%;
+  height: 25%;
+  display: flex;
+}
+.msgTopRL{
+  width: 20%;
+  height: 80%;
+  display: flex;
+  background-color: green;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.msgTopRR{
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 25px;
+}
+.msgMidR{
+  width: 80%;
+  height: 25%;
+  display: flex;
+}
+.msgMidRL{
+  width: 20%;
+  height: 80%;
+  display: flex;
+  background-color: green;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.msgMidRR{
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 25px;
+}
+.msgLowR{
+  width: 80%;
+  height: 25%;
+  display: flex;
+}
+.msgLowRL{
+  width: 20%;
+  height: 80%;
+  display: flex;
+  background-color: green;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.msgLowRR{
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 25px;
+}
+.msgTopR:hover > .msgTopRL{
+  background-color:white;
+  cursor: pointer;
+  border: 1px solid green;
+  color: black;
+}
+.msgTopR:hover > .msgTopRR{
+  color: green;
+}
+.msgTopRL:hover{
+  background-color:white;
+  cursor: pointer;
+  border: 1px solid green;
+  color: black;
+}
+.msgMidR:hover > .msgMidRL{
+  background-color:white;
+  cursor: pointer;
+  border: 1px solid green;
+  color: black;
+}
+.msgMidR:hover > .msgMidRR{
+  color: green;
+}
+.msgMidRL:hover{
+  background-color:white;
+  cursor: pointer;
+  border: 1px solid green;
+  color: black;
+}.msgLowR:hover > .msgLowRL{
+  background-color:white;
+  cursor: pointer;
+  border: 1px solid green;
+  color: black;
+}
+.msgLowR:hover > .msgLowRR{
+  color: green;
+}
+.msgLowRR:hover{
+  background-color:white;
+  cursor: pointer;
+  border: 1px solid green;
+  color: black;
+}
+.msgTopRR:hover{
+  background-color:white;
+  cursor: pointer;
+  border: 1px solid green;
+  color: green
+}
+.msgMidRR:hover{
+  background-color:white;
+  cursor: pointer;
+  border: 1px solid green;
+  color: green
+}
+.msgLowRL:hover{
+  background-color:white;
+  cursor: pointer;
+  border: 1px solid green;
+  color: green
+}
+.msgTeacher{
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+.msgTeacherTittle{
+  width: 100%;
+  height: 80px;
+  display: flex;
+}
+.msgTeacherTittleBox{
+  display: flex;
+  width: 20%;
+  height: 80%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+.msgTeacherTittleL{
+  width: 50%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:white;
+  background-color: green;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.msgTeacherTittleR{
+  width: 50%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: green;
+  border: 2px solid green;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.msgTeacherCard{
+  display: flex;
+  width: 85%;
+  height: 300px;
+  justify-content: space-evenly;
+  align-items:flex-start;
+  margin: auto;
+}
+.msgTeacherCardZww{
+  width: 25%;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  align-items: center;
+}
+.ZwwL{
+  width: 40%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightblue;
+}
+.ZwwR{
+  width: 50%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white
+}
+.msgTeacherCardLls{
+  width: 25%;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  align-items: center;
+}
+.LlsL{
+  width: 40%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightpink;
+}
+.LlsR{
+  width: 50%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+.msgTeacherCardLm{
+  width: 25%;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  align-items: center;
+}
+.LmL{
+  width: 40%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgray;
+}
+.LmR{
+  width: 50%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}

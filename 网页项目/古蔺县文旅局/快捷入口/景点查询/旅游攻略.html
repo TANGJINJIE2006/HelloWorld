@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古蔺县两日游旅游攻略</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        /* 覆盖样式 */
+        .travel-guide {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .day-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--primary-color);
+            position: relative;
+        }
+
+        .day-badge {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .schedule-item {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+
+        .time-icon {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+        }
+
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .food-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .food-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .food-content {
+            padding: 1.2rem;
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .tip-card {
+            background: #f9f9f9;
+            padding: 1.2rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <div class="logo">古蔺旅游攻略</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../../index.html">返回首页</a></li>
+                <li><a href="#itinerary">行程安排</a></li>
+                <li><a href="#food">美食推荐</a></li>
+                <li><a href="#tips">实用贴士</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- 行程安排 -->
+    <section id="itinerary" class="travel-guide">
+        <h2>古蔺县两日游旅游攻略</h2>
+
+        <div class="schedule-grid">
+            <!-- 第一天行程 -->
+            <div class="day-card">
+                <div class="day-badge">Day 1</div>
+                <h3>自然奇观探索——黄荆老林</h3>
+
+                <div class="schedule-item">
+                    <div class="time-icon">
+                        <i class="fa fa-sun-o"></i>
+                    </div>
+                    <div>
+                        <h4>上午：八节洞瀑布群徒步</h4>
+                        <p>游览八节洞片区，徒步观赏丹霞峡谷与瀑布群，全程约3小时。</p>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time-icon">
+                        <i class="fa fa-cutlery"></i>
+                    </div>
+                    <div>
+                        <h4>中午：景区内午餐</h4>
+                        <p>品尝当地特色农家菜，推荐黄荆老林土鸡、山野菜等。</p>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time-icon">
+                        <i class="fa fa-cloud"></i>
+                    </div>
+                    <div>
+                        <h4>下午：红龙湖观光</h4>
+                        <p>乘船游览红龙湖，欣赏湖光山色，湖边可野餐休憩。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第二天行程 -->
+            <div class="day-card">
+                <div class="day-badge">Day 2</div>
+                <h3>红色文化与古镇风情</h3>
+
+                <div class="schedule-item">
+                    <div class="time-icon">
+                        <i class="fa fa-sun-o"></i>
+                    </div>
+                    <div>
+                        <h4>上午：太平古镇红色之旅</h4>
+                        <p>参观太平古镇，漫步长征街、红军街，打卡四渡赤水博物馆。</p>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time-icon">
+                        <i class="fa fa-cutlery"></i>
+                    </div>
+                    <div>
+                        <h4>中午：古镇特色午餐</h4>
+                        <p>品尝红军饭、赤水河鲜鱼等特色菜肴。</p>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time-icon">
+                        <i class="fa fa-cloud"></i>
+                    </div>
+                    <div>
+                        <h4>下午：二郎古镇美酒河风光</h4>
+                        <p>游览美酒河风景区，探访天宝洞、地宝洞，体验郎酒文化。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 美食推荐 -->
+    <section id="food" class="travel-guide">
+        <h2>舌尖上的古蔺</h2>
+
+        <div class="food-grid">
+            <!-- 美食卡片 -->
+            <div class="food-card">
+                <img src="../../images/mlj.jpg" alt="古蔺麻辣鸡">
+                <div class="food-content">
+                    <h3>古蔺麻辣鸡</h3>
+                    <p>选用本地土鸡，秘制红油辣而不燥，肉质紧实。</p>
+                    <div class="location">
+                        <i class="fa fa-map-marker"></i>
+                        <span>推荐店铺：聂墩墩麻辣鸡</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 美食卡片 -->
+            <div class="food-card">
+                <img src="../../images/styu.jpg" alt="赤水河鲜鱼">
+                <div class="food-content">
+                    <h3>赤水河鲜鱼</h3>
+                    <p>赤水河野生鱼现杀现做，推荐藿香鲫鱼、酸辣鲤鱼。</p>
+                    <div class="location">
+                        <i class="fa fa-map-marker"></i>
+                        <span>推荐地点：太平古镇河畔餐馆</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 美食卡片 -->
+            <div class="food-card">
+                <img src="../../images/zrb.jpg" alt="猪儿粑">
+                <div class="food-content">
+                    <h3>猪儿粑</h3>
+                    <p>糯米面皮包裹芽菜肉末或红糖馅，软糯清香。</p>
+                    <div class="location">
+                        <i class="fa fa-map-marker"></i>
+                        <span>推荐地点：街边小吃摊</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 实用贴士 -->
+    <section id="tips" class="travel-guide">
+        <h2>旅行实用贴士</h2>
+
+        <div class="tips-grid">
+            <!-- 贴士卡片 -->
+            <div class="tip-card">
+                <div class="tip-header">
+                    <i class="fa fa-calendar"></i>
+                    <h3>最佳旅行季节</h3>
+                </div>
+                <ul>
+                    <li><i class="fa fa-check"></i> 自然景观：4-10月</li>
+                    <li><i class="fa fa-check"></i> 红色旅游：全年皆宜</li>
+                </ul>
+            </div>
+
+            <!-- 贴士卡片 -->
+            <div class="tip-card">
+                <div class="tip-header">
+                    <i class="fa fa-map-o"></i>
+                    <h3>交通指南</h3>
+                </div>
+                <ul>
+                    <li><i class="fa fa-plane"></i> 最近机场：泸州云龙机场</li>
+                    <li><i class="fa fa-car"></i> 推荐自驾或包车</li>
+                </ul>
+            </div>
+
+            <!-- 贴士卡片 -->
+            <div class="tip-card">
+                <div class="tip-header">
+                    <i class="fa fa-ticket"></i>
+                    <h3>门票信息</h3>
+                </div>
+                <ul>
+                    <li><i class="fa fa-check"></i> 黄荆老林：80元/人</li>
+                    <li><i class="fa fa-check"></i> 太平古镇：免费</li>
+                </ul>
+            </div>
+        </div>
+    </section>

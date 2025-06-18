@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古蔺县特色美食</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        /* 美食页面特有样式 */
+        .food-categories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .food-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .food-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .food-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .food-card:hover .food-img {
+            transform: scale(1.1);
+        }
+
+        .food-info {
+            padding: 1rem;
+        }
+
+        .food-name {
+            color: #c12c1f;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .food-desc {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .food-rating {
+            display: flex;
+            align-items: center;
+            color: #d4af37;
+            font-size: 0.9rem;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .back-link a {
+            color: #c12c1f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">古蔺县文旅局</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../../index.html">返回首页</a></li>
+                <li><a href="景点查询/景点查询.html">景点查询</a></li>
+                <li><a href="美食展示.html">美食展示</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="section-title">古蔺县特色美食</h1>
+
+        <div class="food-categories">
+            <!-- 美食卡片1 -->
+            <div class="food-card">
+                <img src="../../images/mlj.jpg" alt="古蔺麻辣鸡" class="food-img">
+                <div class="food-info">
+                    <h3 class="food-name">古蔺麻辣鸡</h3>
+                    <p class="food-desc">该菜品选用古蔺当地的跑山鸡为主材，经秘制卤水卤制后配特制蘸水食用。因其芳香浓郁，蘸水麻辣刺激，遂得名“麻辣鸡”。
+                        古蔺麻辣鸡传统制作技艺，于2010年入选泸州市第三批非物质文化遗产名录，于2023年入选四川省第六批省级非物质文化遗产代表性项目名录。
+                    </p>
+                    <div class="food-rating">★★★★☆ 4.9分</div>
+                </div>
+            </div>
+
+            <!-- 美食卡片2 -->
+            <div class="food-card">
+                <img src="../../images/lr.jpg" alt="古蔺腊肉" class="food-img">
+                <div class="food-info">
+                    <h3 class="food-name">古蔺腊肉</h3>
+                    <p class="food-desc">传统工艺熏制，肉质紧实，风味独特。腊肉是中国传统腌腊肉制品，通过腌制和熏烤/风干工艺制成，具有防腐耐存、风味独特的特性‌。
+                        其名称源自古代‘晞于阳而炀于火’的加工方</p>
+                    <div class="food-rating">★★★★★ 4.8分</div>
+                </div>
+            </div>
+
+            <!-- 美食卡片3 -->
+            <div class="food-card">
+                <img src="../../images/styu.jpg" alt="酸汤鱼" class="food-img">
+                <div class="food-info">
+                    <h3 class="food-name">酸汤鱼</h3>
+                    <p class="food-desc">酸辣开胃，鱼肉鲜嫩，汤底醇厚
+                        风味独特‌：酸汤由糟辣椒、米汤或野生番茄发酵而成，酸味柔和且有层次，搭配现杀稻花鲤或江团鱼，鱼肉鲜嫩无腥味，汤底酸辣鲜香。‌‌
+                    </p>
+                    <div class="food-rating">★★★★☆ 4.6分</div>
+                </div>
+            </div>
+
+            <!-- 美食卡片4 -->
+            <div class="food-card">
+                <img src="../../images/dh.jpg" alt="豆花饭" class="food-img">
+                <div class="food-info">
+                    <h3 class="food-name">豆花饭</h3>
+                    <p class="food-desc">嫩滑豆花配秘制蘸水，本地人最爱
+                        豆花饭是盛行于川渝贵地区的传统小吃‌，以嫩滑豆花、香辣蘸水和松软米饭为核心组成，兼具清爽与香辣的双重口感，既是日常快餐也是地方文化象征。‌‌
+                    </p>
+                    <div class="food-rating">★★★★☆ 4.4分</div>
+                </div>
+            </div>
+
+
+            <!-- 美食卡片6 -->
+            <div class="food-card">
+                <img src="../../images/kqb.jpg" alt="荞苦饼" class="food-img">
+                <div class="food-info">
+                    <h3 class="food-name">苦荞饼</h3>
+                    <p class="food-desc">健康粗粮，微苦回甘，营养丰富
+                        苦荞饼是一道以苦荞、自发粉为主料，以酵母、白糖等为辅料制作而成的美食。它不仅是一种美食，还承载着当地人的智慧和文化。其独特的口感和健康价值使其成为一种受欢迎的保健食品‌。
+                    </p>
+                    <div class="food-rating">★★★★☆ 4.2分</div>
+                </div>
+            </div>
+
+            <!-- 美食卡片6 -->
+            <div class="food-card">
+                <img src="../../images/glm.jpg" alt="古蔺面" class="food-img">
+                <div class="food-info">
+                    <h3 class="food-name">古蔺面</h3>
+                    <p class="food-desc">面筋道道，百吃不厌，色香味俱全
+                        哪里的面好吃？许多外地人都异口同声地说：“古蔺面。”古蔺面又称古蔺手工面，制作技艺已传承百余年，受到泸州市非遗保护，同时也是国家地理标志证明商标保护产品。
+                        据《古蔺县志》记载，古蔺面制作技艺有据可查的历史已有上百年，可追遡到清朝末年，是川南知名地方特产，先后被央视《舌尖上的中国第二季》《走遍中国》等美食栏目报道过。
+                    </p>
+                    <div class="food-rating">★★★★☆ 4.5分</div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="copyright">
+                © 2025 古蔺县文化和旅游局 版权所有
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

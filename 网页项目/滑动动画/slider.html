@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片滑动效果</title>
+    <link rel="stylesheet" href="slider.css">
+</head>
+
+<body>
+    <div class="slider-container">
+        <!-- 进度条 -->
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <!-- 图片容器 -->
+        <div class="slider"></div>
+        <!-- 控制按钮 -->
+        <div class="controls">
+            <button class="prev">上一张</button>
+            <button class="next">下一张</button>
+            <select class="effect-selector">
+                <option value="fade">淡入淡出</option>
+                <option value="slide">滑动</option>
+                <option value="zoom">缩放</option>
+                <option value="flip">3D翻转</option>
+                <option value="rotate">旋转</option>
+                <option value="bounce">弹跳</option>
+                <option value="fade-slide">淡入滑动</option>
+                <option value="random">随机效果</option>
+            </select>
+            <button class="random-btn">随机切换</button>
+        </div>
+    </div>
+    <script src="slider.js"></script>
+</body>
+
+</html>
