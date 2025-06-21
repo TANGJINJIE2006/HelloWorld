@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古蔺县两日游旅游攻略</title>
+    <style>
+        .tou {
+            width: 100%;
+            height: 140px;
+            background-color: #c12c1f;
+            font-size: 1rem;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* 水平居中 */
+            align-items: center;
+            /* 垂直居中 */
+        }
+
+        .da {
+            width: 100%;
+            height: 20px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* 水平居中 */
+            align-items: center;
+            /* 垂直居中 */
+            margin: 30px auto 0;
+        }
+
+
+        .diyiceng {
+            width: 90%;
+            height: 300px;
+            background-color: white;
+            margin: auto;
+            display: flex;
+            border-radius: 20px;
+            /*圆角*/
+            transition: transform 0.3s ease;
+            margin: 10px auto 0;
+        }
+
+        .diyiceng:hover {
+            transform: translateY(-5px);
+        }
+
+        .left,
+        .right {
+            flex: 1;
+            /*让左右两个模块平均分配父容器（.diyiceng）的宽度
+无论父容器宽度如何变化，这两个模块都会保持等宽*/
+            padding: 30px;
+        }
+
+        .left {
+            background-color: #f8f8f8;
+        }
+
+        .right {
+            background-color: #f0f0f0;
+        }
+
+        .left h3,
+        .right h3 {
+            color: #c12c1f;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #c12c1f;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .left p,
+        .right p {
+            color: #333;
+            margin-bottom: 12px;
+            padding-left: 10px;
+            position: relative;
+        }
+
+        .dierhang {
+            width: 100%;
+            height: 20px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* 水平居中 */
+            align-items: center;
+            /* 垂直居中 */
+            margin: 30px auto 0;
+        }
+
+        .meishi {
+            width: 100%;
+            height: 380px;
+            background-color: #f0f0f0;
+            margin: 10px;
+            display: flex;
+            gap: 80px;
+        }
+
+        .zuo {
+            width: 29%;
+            height: 380px;
+            background-color: white;
+        }
+
+        .zuo-image {
+            width: 100%;
+            height: 66%;
+            object-fit: cover;
+            /* 保持图片比例，填充容器并裁剪溢出部分 */
+            object-position: center;
+            /* 居中显示图片 */
+            border-radius: 20px;
+        }
+
+        .zhong {
+            width: 29%;
+            height: 380px;
+            background-color: white;
+        }
+
+        .zhong-image {
+            width: 100%;
+            height: 66%;
+            object-fit: cover;
+            /* 保持图片比例，填充容器并裁剪溢出部分 */
+            object-position: center;
+            /* 居中显示图片 */
+            border-radius: 20px;
+        }
+
+
+        .you {
+            width: 29%;
+            height: 380px;
+            background-color: white;
+        }
+
+        .you-image {
+            width: 100%;
+            height: 66%;
+            object-fit: cover;
+            /* 保持图片比例，填充容器并裁剪溢出部分 */
+            object-position: center;
+            /* 居中显示图片 */
+            border-radius: 20px;
+        }
+
+        .dibu {
+            width: 100%;
+            height: 50px;
+            background-color: #c12c1f;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* 水平居中 */
+            align-items: center;
+            /* 垂直居中 */
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tou">
+        <h1><span>古蔺县旅游攻略</span></h1>
+        <span>感受风土人情，体味美食天下</span>
+        <li><a href="../../index.html">返回首页</a></li>
+    </div>
+    <div class="da">
+        <h4>古蔺县两日游旅游攻略</h4>
+    </div>
+    <div class="diyiceng">
+        <div class="left">
+            <h3>第一天行程</h3>
+            <p>上午：抵达古蔺县，参观非遗展示馆，了解当地传统文化</p>
+            <p>中午：品尝古蔺特色美食，如麻辣鸡、郎酒红烧肉</p>
+            <p>下午：游览黄荆老林景区，欣赏自然风光</p>
+        </div>
+        <div class="right">
+            <h3>第二天行程</h3>
+            <p>上午：前往太平古镇，感受历史文化底蕴</p>
+            <p>中午：在古镇享用午餐，品尝当地小吃</p>
+            <p>下午：参观郎酒庄园，了解郎酒酿造工艺</p>
+            <p>晚上：结束行程，返程</p>
+        </div>
+    </div>
+    <div class="dierhang">
+        <h4>舌尖上的古蔺</h4>
+    </div>
+    <div class="meishi">
+        <div class="zuo">
+            <img src="../../images/mlj.jpg" alt="古蔺麻辣鸡" class="zuo-image">
+            <h3>古蔺麻辣鸡</h3>
+            <p>选用本地土鸡，秘制红油辣而不燥，肉质紧实。</p>
+            <span>推荐店铺：聂墩墩麻辣鸡</span>
+        </div>
+        <div class="zhong">
+            <img src="../../images/styu.jpg" alt="赤水河鲜鱼" class="zhong-image">
+            <h3>赤水河鲜鱼</h3>
+            <p>赤水河野生鱼现杀现做，推荐藿香鲫鱼、酸辣鲤鱼。</p>
+            <span>推荐地点：太平古镇河畔餐馆</span>
+        </div>
+        <div class="you">
+            <img src="../../images/zrb.jpg" alt="猪儿粑" class="you-image">
+            <h3>猪儿粑</h3>
+            <p>糯米面皮包裹芽菜肉末或红糖馅，软糯清香。</p>
+            <span>推荐地点：街边小吃摊</span>
+
+        </div>
+    </div>
+    <div class="dibu">
+        © 2025 古蔺县非物质文化遗产保护中心
+    </div>
+</body>
+
+</html>

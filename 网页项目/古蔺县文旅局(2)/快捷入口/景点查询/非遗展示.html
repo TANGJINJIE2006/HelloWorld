@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>非遗展示</title>
+    <style>
+        .tou {
+            width: 100%;
+            height: 140px;
+            background-color: #c12c1f;
+            font-size: 1rem;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* 水平居中 */
+            align-items: center;
+            /* 垂直居中 */
+        }
+
+        .zhongjian {
+            width: 100%;
+            height: 800px;
+            background-color: beige;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            /* 允许换行 */
+            justify-content: center;
+            /* 水平居中 */
+        }
+
+        .dibu {
+            width: 100%;
+            height: 50px;
+            background-color: #c12c1f;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* 水平居中 */
+            align-items: center;
+            /* 垂直居中 */
+            color: white;
+        }
+
+        .kapian {
+            width: 29%;
+            height: 350px;
+            background-color: white;
+            position: relative;
+            /* 为绝对定位的图片提供参考 */
+            overflow: hidden;
+            /* 隐藏超出容器的图片部分 */
+            color: #c12c1f;
+
+        }
+
+        .kapian-image {
+            width: 100%;
+            height: 66%;
+            object-fit: cover;
+            /* 保持图片比例，填充容器并裁剪溢出部分 */
+            object-position: center;
+            /* 居中显示图片 */
+        }
+
+        .kapian-content {
+            padding: 15px;
+            /* 添加内边距，使内容不紧贴边缘 */
+        }
+
+        .kapian h4 {
+            margin: 0;
+            text-align: center;
+            /* 标题居中显示 */
+            font-size: 1.2rem;
+            /* 适当增大标题字体 */
+        }
+
+        .kapian p {
+            margin: 10px 0 0 0;
+            color: #666;
+            /* 描述文字变为灰色 */
+            font-size: 0.9rem;
+            /* 适当减小描述文字大小 */
+            line-height: 1.4;
+            /* 增加行高，提高可读性 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tou">
+        <h1><span>古蔺非物质文化遗产</span></h1>
+        <span>传承历史文脉，弘扬传统文化</span>
+        <li><a href="../../index.html">返回首页</a></li>
+    </div>
+    <div class="zhongjian">
+        <div class="kapian">
+            <img src="../../images/miao.png" alt="苗族刺绣" class="kapian-image">
+            <div class="kapian-content">
+                <h4>苗族刺绣</h4>
+                <p>古蔺苗族刺绣以其独特的图案和色彩闻名，纹样多取材于自然，具有强烈的民族特色和艺术价值。</p>
+            </div>
+        </div>
+        <div class="kapian">
+            <img src="../../images/hua.webp" alt="古蔺花灯" class="kapian-image">
+            <div class="kapian-content">
+                <h4>古蔺花灯</h4>
+                <p>古蔺花灯是当地传统民间艺术形式，历史悠久，表演内容丰富多样，深受群众喜爱。</p>
+            </div>
+        </div>
+        <div class="kapian">
+            <img src="../../images/niang.webp" alt="郎酒酿造技艺" class="kapian-image">
+            <div class="kapian-content">
+                <h4>郎酒酿造技艺</h4>
+                <p>郎酒酿造技艺是古蔺地区的传统工艺，采用独特的配方和酿造方法，酿造出的酒质醇厚，香气浓郁。</p>
+            </div>
+        </div>
+        <div class="kapian">
+            <img src="../../images/zhubian.webp" alt="古蔺竹编" class="kapian-image">
+            <div class="kapian-content">
+                <h4>古蔺竹编</h4>
+                <p>古蔺竹编以当地优质竹子为材料，工艺精湛，制品造型美观，兼具实用性和艺术性。</p>
+            </div>
+        </div>
+        <div class="kapian">
+            <img src="../../images/huanshanjie.webp" alt="苗族花山节" class="kapian-image">
+            <div class="kapian-content">
+                <h4>苗族花山节</h4>
+                <p>苗族花山节是古蔺苗族的传统节日，每年举行一次，期间有丰富多彩的民俗活动和表演。</p>
+            </div>
+        </div>
+        <div class="kapian">
+            <img src="../../images/long.webp" alt="古蔺龙舟赛" class="kapian-image">
+            <div class="kapian-content">
+                <h4>古蔺龙舟赛</h4>
+                <p>古蔺龙舟赛是当地传统水上体育活动，每逢重大节日举行，场面热烈壮观，吸引众多观众。</p>
+            </div>
+        </div>
+    </div>
+    <div class="dibu">
+        © 2025 古蔺县非物质文化遗产保护中心
+    </div>
+</body>
+
+</html>
